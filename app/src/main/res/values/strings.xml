@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">dB_Calc</string>
+
+    <string-array name="Linear_Power_unites">
+        <item>W/W</item>
+        <item>MW</item>
+        <item>kW</item>
+        <item>W</item>
+        <item>mW</item>
+        <item>uW</item>
+        <item>nW</item>
+        <item>pW</item>
+    </string-array>
+
+    <string-array name="dB_Power_unites">
+        <item>dB</item>
+        <item>dBMW</item>
+        <item>dBkW</item>
+        <item>dBW</item>
+        <item>dBm</item>
+        <item>dBuW</item>
+        <item>dBnW</item>
+        <item>dBpW</item>
+    </string-array>
+
+    <string-array name="Linear_Voltage_unites">
+        <item>V/V</item>
+        <item>MV</item>
+        <item>kV</item>
+        <item>V</item>
+        <item>mV</item>
+        <item>uV</item>
+        <item>nV</item>
+        <item>pV</item>
+    </string-array>
+
+    <string-array name="dB_Voltage_unites">
+        <item>dB</item>
+        <item>dBMV</item>
+        <item>dBkV</item>
+        <item>dBV</item>
+        <item>dBmV</item>
+        <item>dBuV</item>
+        <item>dBnV</item>
+        <item>dBpV</item>
+    </string-array>
+
+</resources>
