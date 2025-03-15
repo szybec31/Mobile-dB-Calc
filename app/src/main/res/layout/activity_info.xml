@@ -45,7 +45,7 @@
                 android:background="@drawable/in_out_data_entry"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="Wat unit"
+                android:text="Watts"
                 android:textColor="@color/white"
                 android:textSize="25dp"
                 android:textStyle="bold" />
@@ -57,7 +57,7 @@
                 android:background="@drawable/in_out_data_entry"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="Volt unit"
+                android:text="Volts"
                 android:textColor="@color/white"
                 android:textSize="25dp"
                 android:textStyle="bold" />
