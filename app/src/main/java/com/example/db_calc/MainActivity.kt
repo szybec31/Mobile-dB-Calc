@@ -1,6 +1,7 @@
 package com.example.db_calc
 
 import android.content.Intent
+import kotlin.math.*
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -98,8 +99,6 @@ class MainActivity : ComponentActivity() {
 
         }
 
-
-
         fun convert_unit_voltage(input_data: String,fromUnit:String,toUnit:String): Double{
             var x: Double = input_data.toDouble()
 
@@ -112,8 +111,6 @@ class MainActivity : ComponentActivity() {
                 var res: Double = Math.pow(10.0, x / 20)
                 return res
             }
-
-
 
             val toBaseUnit: Map<String, (Double) -> Double> = mapOf(
                 "MV" to { it * 1000_000_000 }, // MW do mW
@@ -391,9 +388,14 @@ class MainActivity : ComponentActivity() {
                 res = convert_unit_power(input_data,unit1,unit2)
             }
 
-
-
-            var output_data: String = String.format("%.2f",res)
+            // Zaokrąglij liczbę do dwóch znaczących
+            fun Double.roundToSignificantFigures(n: Int): Double {
+                if (this == 0.0) return 0.0
+                val d = 10.0.pow(n - ceil(log10(abs(this))))
+                return (this * d).roundToInt() / d
+            }
+            res = res.roundToSignificantFigures(2)
+            var output_data: String = res.toString()
             binding.Answer.setText(output_data)
 
         }

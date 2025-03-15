@@ -32,6 +32,7 @@ class Info_Activity : AppCompatActivity() {
         headerRow.background = border
         // Lista danych (każdy wiersz zawiera 4 wartości)
         val data = listOf(
+            listOf("1 W", "0 dBW", "1 V", "0 dBV"),
             listOf("2 W", "3 dBW", "2 V", "6 dBV"),
             listOf("4 W", "6 dBW", "4 V", "12 dBV"),
             listOf("8 W", "9 dBW", "8 V", "18 dBV"),
@@ -49,13 +50,13 @@ class Info_Activity : AppCompatActivity() {
         }
     }
 
-    // 🔹 Funkcja do tworzenia komórek tabeli
+    // Funkcja do tworzenia komórek tabeli
     private fun createTextView(text: String): TextView {
         val textView = TextView(this)
         textView.text = text
         textView.setPadding(16, 8, 16, 8)
         textView.gravity = Gravity.CENTER
-        textView.height = 150
+        textView.height = 100
         textView.textSize = 20f
         textView.setTextColor(Color.WHITE)
 

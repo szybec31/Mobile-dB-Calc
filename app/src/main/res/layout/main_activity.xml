@@ -10,13 +10,9 @@
     tools:ignore="ExtraText">
 
     <ImageView
-        android:id="@+id/LOGO"
-        android:layout_width="350dp"
-        android:layout_height="75dp"
-        android:layout_margin="20dp"
-        android:background="@color/white"
-        android:gravity="center"
-        android:text="LOGO" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/equation1"></ImageView>
 
     <Switch
         android:id="@+id/switch1"
