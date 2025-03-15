@@ -5,6 +5,7 @@ The calculator allows you to convert units of watts (W) and volts (V) from a lin
 The row of units range:
 - [MW] to [pW/dBpW] 
 - [dBMW] to [dBpW]
+
 the same with volts
 
 ![img](img/1.png)
@@ -31,4 +32,4 @@ The app include informations about the most important values and equations to me
     ```
 
 - Move it to cloud file server for example google drive
-- Run on mobile device
+- Run on a mobile device
